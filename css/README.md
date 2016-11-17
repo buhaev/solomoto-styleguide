@@ -130,8 +130,6 @@ We encourage some combination of OOCSS and BEM for these reasons:
   * Harry Roberts' [introduction to BEM](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
   * [BEM Info](https://ru.bem.info/) 
 
-We recommend a variant of BEM with PascalCased “blocks”, which works particularly well when combined with components (e.g. React). Underscores and dashes are still used for modifiers and children.
-
 **Example**
 
 ```jsx
@@ -156,6 +154,8 @@ We recommend a variant of BEM with PascalCased “blocks”, which works particu
   * `.listing-card` is the “block” and represents the higher-level component
   * `.listing-card__title` is an “element” and represents a descendant of `.listing-card` that helps compose the block as a whole.
   * `.listing-card_featured` is a “modifier” and represents a different state or variation on the `.listing-card` block.
+  
+Each "block" should be placed in the separate file with the same name
 
 ### ID selectors
 
